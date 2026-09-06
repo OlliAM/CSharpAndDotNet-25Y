@@ -2,7 +2,8 @@
 
 public class LogProcessor
 {
-    // FEJL: 'LogHandler' er endnu ikke defineret!
+    public delegate void LogHandler(string log, DateTime dateTime);
+    
     public void ProcessLogs(string[] logs, LogHandler handler)
     {
         foreach (var log in logs)
